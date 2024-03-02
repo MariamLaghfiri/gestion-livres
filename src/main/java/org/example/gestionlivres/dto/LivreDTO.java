@@ -1,8 +1,8 @@
 package org.example.gestionlivres.dto;
 
-import jakarta.persistence.Entity;
 import lombok.*;
 import org.example.gestionlivres.entity.Enum.Genre;
+import org.example.gestionlivres.entity.Enum.Role;
 
 @Builder
 @AllArgsConstructor
@@ -14,4 +14,6 @@ public class LivreDTO {
     private String titre;
     private String auteur;
     private Genre genre;
+    private Boolean deleted;
+    private Role roles;
 }
